@@ -10,7 +10,7 @@ var bio = {
     "location": "Sacramento, CA"
   },
   "bioPic": "images/DJ_BEACH.jpg",
-  "skills": ["JS", "HTML", "CSS", "C#", "C++", "Visual Studio"],
+  "skills": ["JavaScript", "JQuery", "HTML", "CSS", "C#", "C++", "WordPress", "Git", "Visual Studio"],
   display: function() {
     var formattedName = HTMLheaderName.replace("%data%", bio.name);
     var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
@@ -39,6 +39,12 @@ var bio = {
 
 var work = {
     "jobs": [ {        
+        "employer": "Code204",
+        "title": "Intern",
+        "location": "Vacaville, Ca",
+        "dates": "August, 2015 - Current",
+        "description": "Develop and maintain Websites using HTML/CSS/JavaScript and WordPress. Design and develop custom WordPress templates and plugins."
+    },{        
         "employer": "Applebee's",
         "title": "Server",
         "location": "Sacramento, Ca",
