@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet" type="text/css"></link>
+    <link href="css/myStyles.css" rel="stylesheet" type="text/css"></link>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/helper.js"></script>
+    <script src="js/navScroll.js"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+    <title>Don's Resume</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+
+  <body unresolved>
+    <div id="main">
+      <div id="header" class="center-content">
+        <ul id="topContacts" class='flex-box'></ul>          
+      </div>      
+      <nav id="nav-bar">
+        <ul id="nav-menu">
+          <li><a class="nav-item" href="#workExperience">WORK</a>
+          </li>
+          <li><a class="nav-item" href="#education">EDUCATION</a>
+          </li>
+          <li><a class="nav-item" href="#projects">PROJECTS</a>
+          </li>
+          
+        </ul>
+      </nav>
+      <div style='clear: both;'></div>
+      <div id="workExperience" class='gray sections'>
+        <h2 name="work" class="sub-title">WORK EXPERIENCE</h2>
+      </div>
+      <div id="projects" class="sections">
+        <h2 name="projects" class="sub-title">PROJECTS</h2>
+      </div>
+      <div id="education" class='gray sections'>
+        <h2 name="education" class="sub-title">EDUCATION</h2>
+      </div>      
+      <div id="mapDiv">
+        <h2 class="sub-title">Where I've Lived and Worked</h2>
+      </div>
+      <div id="letsConnect" class='dark-gray'>
+        <h2 class='orange center-text'>Let's Connect</h2>
+        <ul id="footerContacts" class="flex-box">
+        </ul>
+      </div>
+    </div>
+    <script src="js/resumeBuilder.js"></script>
+    <script type="text/javascript">
+    if (document.getElementsByClassName("flex-item").length === 0) {
+      document.getElementById("topContacts").style.display = "black";
+    }
+    if (document.getElementsByTagName("h1").length === 0) {
+      document.getElementById("header").style.display = "black";
+    }
+    if (document.getElementsByClassName("work-entry").length === 0) {
+      document.getElementById("workExperience").style.display = "black";
+    }
+    if (document.getElementsByClassName("project-entry").length === 0) {
+      document.getElementById("projects").style.display = "black";
+    }
+    if (document.getElementsByClassName("education-entry").length === 0) {
+      document.getElementById("education").style.display = "black";
+    }
+    if (document.getElementsByClassName("skills-entry").length === 0) {
+      document.getElementById("skillsChart").style.display = "black";
+    }
+    if (document.getElementsByClassName("flex-item").length === 0) {
+      document.getElementById("letsConnect").style.display = "black";
+    }
+    if (document.getElementById("map") == undefined) {
+      document.getElementById("mapDiv").style.display = "black";
+    }
+    </script>
+  </body>
+
+</html>

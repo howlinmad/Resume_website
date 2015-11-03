@@ -1,0 +1,140 @@
+.project-img {
+  display: block;  
+  max-width: 300px;    
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#name {
+  font-size: 2.5em;
+  font-weight: 600;
+}
+#role {
+  color: dimgray;
+}
+.expand-header {
+  margin-bottom: 30px;
+}
+.biopic {
+  margin-right: 30px;
+  padding: 0px;
+  border-radius: 100%;
+}
+.welcome-message {
+  font-size: 1.5em;
+}
+#skillsH3 {
+  font-weight: 600;
+}
+.fixed-nav {
+  position: fixed;
+  top: 0;
+}
+#nav-bar {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;  
+  background-color: #337DEB;  
+  overflow: hidden;
+  z-index: 100;
+}
+#nav-menu {
+  padding: 0;
+  list-style-type: none;
+  position: relative;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 800px;
+  margin-left: 10px;
+  justify-content: space-between;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+#navemenu li {
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: white;
+  padding: 0;
+  border: none;
+}
+.sum-entry {
+  padding-bottom: 10px;
+}
+a.nav-item {
+  color: white;
+  height: auto;
+  padding: 10px 20px;
+  margin-top: 0px;
+  display: block;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+  white-space: nowrap;
+  font-weight: 900;
+}
+a.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+a.nav-item:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+  outline: 0;
+}
+a.nav-item:active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.sections {
+  padding-top: 80px;
+  padding-bottom: 70px;
+}
+#mapDiv {
+  padding-top: 60px;
+}
+.sub-title {
+  font-size: 1.8em;
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
+#OC-title {
+  margin-top: 30px;
+  font-size: 1.5em;
+  text-decoration: underline;
+  color: #535353;
+}
+.section-hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.desc {
+  margin-bottom: 20px;
+}
+a {
+  font-size: 1.5em;
+}
+a.no-click {
+  pointer-events: none;
+  cursor: default;
+}
+@media (max-width: 750px) {
+  #name, #role {
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+  a {
+    font-size: 1.2em;
+  }
+  .sub-title {
+    text-align: center;
+  }
+  #OC-title {
+    text-align: center;
+  }
+}
+@media (min-width: 750px) {
+  #topContacts {
+    margin-bottom: 20px;
+  }
+}
